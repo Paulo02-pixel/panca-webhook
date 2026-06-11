@@ -1,0 +1,23 @@
+{
+  "name": "panca-webhook",
+  "version": "1.0.0",
+  "description": "PANCA delivery webhook processor",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest --runInBand --forceExit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-mock-extended": "^4.0.1",
+    "mongodb-memory-server": "^9.1.6",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  }
+}
