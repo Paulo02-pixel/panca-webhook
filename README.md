@@ -324,5 +324,3 @@ Usé Claude (Anthropic) como multiplicador en este reto, principalmente para:
 - **Generar el scaffold inicial** de la estructura de carpetas y los schemas de Mongoose, que luego revisé y ajusté (especialmente la decisión de centavos vs decimales, que cambié de la sugerencia inicial de usar `decimal128` de MongoDB a centavos enteros por simplicidad operacional en JS).
 - **Discutir la estrategia de idempotencia**: el LLM propuso inicialmente solo el índice único en `Order`; yo agregué la colección `ProcessedEvent` separada para poder devolver exactamente la misma respuesta HTTP y manejar la concurrencia explícitamente.
 - **Revisar los bugs de la Parte B**: el LLM identificó los bugs 1, 2 y 4 rápidamente; los bugs 3 y 5 (flotantes en descuentos y doble descuento) los encontré yo revisando el código línea por línea.
-
-Puedo explicar cualquier línea del código en la entrevista técnica.
